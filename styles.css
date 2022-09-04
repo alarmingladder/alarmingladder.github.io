@@ -111,12 +111,14 @@ p{
 /* Meet the Team Section */
 
 .card{
-    width: 50%;
+    
     
 }
 
 .team-photo{
     padding: 2rem;
+   
+    
   
 }
 
