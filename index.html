@@ -7,11 +7,18 @@
     <title>Alarming Ladder Studios</title>
     <link rel="stylesheet" href="styles.css">
      <!-- Bootstrap links -->
+     <script src="js/jquery-1.7.1.min.js"></script>
+     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+
+    <!--These 3 scripts allow the carousel to work on the front page-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="navigation">
@@ -76,13 +83,81 @@
       </section>
       <section id="updates">
         <h2 class="display-3">Latest Updates</h2>
-        <ul class="juicer-feed" data-feed-id="alarmingladder" data-origin="embed-code"></ul>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+              <img class="d-block carousel-image" src="Images/innovation2.png" alt="First slide">
+              </div>
+                  <h3>Alarming Ladders x Games Innovation Challenge - 07/04/2022</h3>
+                  <p>Alarming Ladder Studios has won the Gameplay Award at the Games Innovation Challenge! Using a prototype for our project Kingdom Run VR, the judges highlighted its ‘easy-to-grasp concept paired with high entertainment value’. 
+                    Alarming Ladder Studios now plans to build off the success of the Gameplay Award with a focus on work on Kingdom Run VR’s prototype.</p>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img class="d-block  carousel-image" src="/Images/dan_thumbsup.jpeg" alt="Second slide">
+              </div>
+              <h3>Alarming Ladders x Dundee Pitching Event - 09/08/2022</h3>
+              <p>Alarming Ladder Studios travels to Scotland. The dev team had a great time socialising with the other Tranzfuser 2022 teams before preparing for a pitching event in one of the hearts of the UK Games Industry, Dundee.
+                Alarming Ladder Studios hopes to attend more events in the future while still focusing on completing our playable build of Kingdom Run VR for our upcoming showcase event!</p>
+              </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img class="d-block  carousel-image-transfuzer" src="Images/tf2.jpg" alt="Third slide">
+              </div>
+              <h3>Alarming Ladders x Tranzfuser - 20/06/2022</h3>
+              <p>Alarming Ladder Studios was very fortunate to be accepted into the Tranzfuser 2022 programme representing the University of Suffolk. With help from the UK Games Talent and Finance team, Alarming Ladder Studios hopes to focus on creating a playable build of Kingdom Run VR for a future showcase event. 
+                This opportunity also helps us grow as a company building an ethical work culture and having access to many individuals within the games industry, including Julia Le Gallo producer extraordinaire.</p>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img class="d-block  carousel-image-barclays" src="/Images/games-frenzy2.jpg" alt="Fourth slide">
+              </div>
+              <h3>Alarming Ladders x Barclays Games Frenzy - 01/07/2022</h3>
+              <p>Alarming Ladder Studios friends at Barclays Games and Esports invited the team to showcase Kingdom Run VR at the Barclays Games Frenzy at Barclays headquarters in Canary Wharf. The team had a great time showcasing the project for the first time to the public seeing some amazing runs first-hand! 
+                With the feedback and responses collected Alarming Ladder Studios' goal is to continue work on the prototype for Tranzfuser 2022 and a future release (date unconfirmed).</p>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img class="d-block  carousel-image" src="/Images/ALS_EGX.png" alt="Fifth slide">
+              </div>
+              <h3>Alarming Ladders x EGX - 26/09/2022</h3>
+              <p>Alarming Ladder Studios had the amazing opportunity to promote and showcase our title: Kingdom Run VR at EGX London 2022! We had over 350 people try Kingdom Run VR within the Tranzfuser booth setting new high scores and leaving some amazing feedback. Over 50,000 gems were collected over the 4-day period with some dedicated fans coming back multiple times to beat their score. 
+                Also thanks to Barclays Games and Esports, Alarming Ladder Studios also had a chance to talk about the project's progress and goals on stage! Afterwards, we even had some brave individuals play the game on stage.</p>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img class="d-block  carousel-image-2023" src="/Images/ALx2023.jpeg" alt="Sixth slide">
+              </div>
+              <h3>Alarming Ladders x 2023 - 12/11/2022</h3>
+              <p>Alarming Ladder Studios has rested post-EGX and are hard at work! The dev team has grown and our vision is with it! Our main news is that Kingdom Run VR will be launching in early 2023 on a VR headset near you! 
+                Alarming Ladder Studios continues to attend local events and looks forward to growing and releasing multiple titles in 2023 while working with the University of Suffolk and other bodies to support new developers jumping into the industry for the first time.</p>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </section>
       <section id="team">
         <h2 class="display-3">Meet the Team</h2>
         <div class="container text-center">
           <div class="row justify-content-around">
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
               <div class="card text-bg-dark border-light">
                 <img class="team-photo" src="/Images/Daniel_Photo.png" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -91,12 +166,30 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
               <div class="card text-bg-dark border-light">
                 <img class="team-photo" src="/Images/Hannah_Photo.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Hannah Bull</h5>
-                  <p class="card-text">Artist</p>
+                  <p class="card-text">Co-Founder / Art Director</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
+              <div class="card text-bg-dark border-light">
+                <img class="team-photo" src="/Images/Danny_Photo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Danny Parker</h5>
+                  <p class="card-text">Unity Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
+              <div class="card text-bg-dark border-light">
+                <img class="team-photo" src="/Images/Chris_Photo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chris Palmer</h5>
+                  <p class="card-text">Level Designer</p>
                 </div>
               </div>
             </div>
@@ -108,8 +201,7 @@
           </div>
       </section>
       <section id="contact">
-        <h2 class="display-3">Get in Touch</h2>
-        <p>We'd love to hear from you!</p>
+        <h2 id="get_in_touch" class="display-3">Get in Touch</h2>
         <a href = "mailto: alarmingladderstudios@gmail.com"><i class="fa-solid fa-envelope"></i></a>
         <a target="_blank" href="https://discord.com/invite/SGM8r9n2M7"><i class="fa-brands fa-discord"></i></a>
         <a target="_blank" href="https://twitter.com/AlarmingLadder"><i class="fa-brands fa-twitter"></i></a>
