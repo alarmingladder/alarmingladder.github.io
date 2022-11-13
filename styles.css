@@ -131,6 +131,13 @@ p{
     border: #212529 6px solid;
 }
 
+.carousel-image-thumbsup{
+    width: 25rem;
+    height: 30rem;
+    text-align: center;
+    border: #212529 6px solid;
+}
+
 .carousel-image-transfuzer{
     width: 90rem;
     height: 30rem;
